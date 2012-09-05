@@ -7,42 +7,30 @@ package
 		public static var _currLevel:Level;
 		
 		public static var groupBackground:FlxGroup;
-		public static var groupClouds:FlxGroup;
 		public static var groupTilemap:FlxGroup;
 		public static var groupCollects:FlxGroup;
-		public static var groupLevelForeground:FlxGroup;
 		public static var groupPlayer:FlxGroup;
 		public static var groupForeground:FlxGroup;
-		public static var groupForegroundHigh:FlxGroup;
-		public static var groupForegroundHighest:FlxGroup;
 		
 		function PlayState():void
 		{
 			super();
 
 			groupBackground = new FlxGroup;
-			groupClouds = new FlxGroup;
 			groupTilemap = new FlxGroup;
 			groupPlayer = new FlxGroup;
 			groupCollects = new FlxGroup;
-			groupLevelForeground = new FlxGroup;
 			groupForeground = new FlxGroup;
-			groupForegroundHigh = new FlxGroup;
-			groupForegroundHighest = new FlxGroup;
 			
 			// Create the level
 			var currLevelClass:Class = levelArray[FlixelTemplate.currLevelIndex];
 			_currLevel = new currLevelClass( groupBackground );
 			
 			this.add(groupBackground);
-			this.add(groupClouds);
 			this.add(groupTilemap);
 			this.add(groupPlayer);
 			this.add(groupCollects);
-			this.add(groupLevelForeground);
 			this.add(groupForeground);
-			this.add(groupForegroundHigh);
-			this.add(groupForegroundHighest);
 		}
 		
 		override public function update():void

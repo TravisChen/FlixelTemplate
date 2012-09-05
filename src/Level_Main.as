@@ -62,13 +62,13 @@ package    {
 			roundEndContinueText.setFormat(null,8,TEXT_COLOR,"center");
 			roundEndContinueText.scrollFactor.x = roundEndContinueText.scrollFactor.y = 0;	
 			roundEndContinueText.visible = false;
-			PlayState.groupForegroundHighest.add(roundEndContinueText);
+			PlayState.groupForeground.add(roundEndContinueText);
 			
 			roundEndPointsText = new FlxText(0, FlxG.height - 48, FlxG.width, "0");
 			roundEndPointsText.setFormat(null,16,TEXT_COLOR,"center");
 			roundEndPointsText.scrollFactor.x = roundEndContinueText.scrollFactor.y = 0;	
 			roundEndPointsText.visible = false;
-			PlayState.groupForegroundHighest.add(roundEndPointsText);
+			PlayState.groupForeground.add(roundEndPointsText);
 		}
 		
 		private function updateTimer():void
