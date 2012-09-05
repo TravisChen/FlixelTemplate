@@ -16,8 +16,6 @@ package
 		public static var groupForegroundHigh:FlxGroup;
 		public static var groupForegroundHighest:FlxGroup;
 		
-		public var cursor:AnimatedCursor;
-		
 		function PlayState():void
 		{
 			super();
